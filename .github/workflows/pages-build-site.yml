@@ -45,6 +45,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.THE_TOKEN }} // 配置在项目里的secrets
+          personal_token: ${{ secrets.THE_TOKEN }} // 配置在项目里的secrets
           exclude_assets: ""
-          publish_dir: dist // 需要发布内容的路径
+          publish_dir: ./dist // 需要发布内容的路径
