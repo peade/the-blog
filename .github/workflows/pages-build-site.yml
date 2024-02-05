@@ -4,6 +4,20 @@ on:
   push:
     branches:
       - main
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,4 +39,4 @@ jobs:
           folder: ./dist
           # 部署的分支，默认 gh-pages
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}  # secrets.THEME_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }} # secrets.THEME_TOKEN
