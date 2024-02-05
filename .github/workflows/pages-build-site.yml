@@ -26,4 +26,5 @@ jobs:
           folder: ./dist
           # 部署的分支，默认 gh-pages
           branch: gh-pages
+          token: ${{ secrets.THE_TOKEN }}
   
