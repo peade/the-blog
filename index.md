@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: Feature A
-    details: Feature A details
+    details: Feature A details Feature A details
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
